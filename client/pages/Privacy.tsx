@@ -80,7 +80,7 @@ export default function Privacy() {
               <p>Our website may include links to third-party sites. We are not responsible for the privacy or security practices of these external platforms. Please review their privacy policies separately.</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">7. Children's Privacy</h2>
-              <p>Our Services are not intended for users under the age of 16. We do not knowingly collect personal data from children. If you believe a child has submitted personal information, please contact us for deletion.</p>
+              <p>Our Services are not intended for users under the age of 16. We do not knowingly collect personal data from children. If you believe a child has submitted personal information through our platform, please contact us immediately at <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a> and we will take prompt steps to delete such information from our records.</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">8. Security and Retention</h2>
               <p>We take reasonable precautions to protect your personal information. However, no online transmission or storage is completely secure. We retain your information only as long as necessary for our business purposes or to meet legal requirements.</p>
@@ -97,7 +97,8 @@ export default function Privacy() {
               
               <p className="mt-6">To make any such request, please contact us at:</p>
               <p className="mt-2">📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
-              <p>📍 NumeroMobile, Sector 54, Gurgaon, Haryana, 122011</p>
+              <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
+              <p>📍 NumeroMobile, 4th floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">10. Updates to this Privacy Policy</h2>
               <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal obligations. Updates will be posted on this page with the revised date.</p>
