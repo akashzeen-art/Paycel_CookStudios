@@ -87,6 +87,11 @@ export default function Terms() {
               </ul>
               
               <p className="mt-4">All disputes arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of Indian courts and governed by the laws of India.</p>
+
+              <h2 className="text-2xl font-bold mt-8 mb-4">Contact Us</h2>
+              <p>📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
+              <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
+              <p>📍 NumeroMobile, 4th Floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
             </div>
             
             <div className="mt-8 pt-8 border-t border-white/20">

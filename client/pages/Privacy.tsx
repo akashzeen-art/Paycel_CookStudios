@@ -98,7 +98,7 @@ export default function Privacy() {
               <p className="mt-6">To make any such request, please contact us at:</p>
               <p className="mt-2">📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
               <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
-              <p>📍 NumeroMobile, 4th floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
+              <p>📍 NumeroMobile, 4th Floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">10. Updates to this Privacy Policy</h2>
               <p>We may update this Privacy Policy periodically to reflect changes in our practices or legal obligations. Updates will be posted on this page with the revised date.</p>

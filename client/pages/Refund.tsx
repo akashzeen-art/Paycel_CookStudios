@@ -34,7 +34,7 @@ export default function Refund() {
               <p className="mt-4">Please note that refunds are not guaranteed and may vary depending on the circumstances. Refund requests due to issues beyond NumeroMobile's control (e.g., changes in personal circumstances, third-party hardware or software failures) will not be honored.</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">4. Process for Requesting a Refund</h2>
-              <p>To request a refund, please contact our customer support team at <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a>. Include your account information, subscription details, and a brief explanation of why you are requesting a refund.</p>
+              <p>To request a refund, please contact our customer support team at <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a> or call us at <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a>. Include your account information, subscription details, and a brief explanation of why you are requesting a refund.</p>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">5. Refund Processing</h2>
               <p>Once your refund request is received and inspected, we will send you an email to notify you of the approval or rejection of your refund.</p>
@@ -55,7 +55,10 @@ export default function Refund() {
               </ul>
               
               <h2 className="text-2xl font-bold mt-8 mb-4">7. Contact Us</h2>
-              <p>If you have any questions about our refund policy, please contact us at <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a>.</p>
+              <p>If you have any questions about our refund policy, please contact us at:</p>
+              <p className="mt-2">📧 <a href="mailto:bd@numeromobile.com" className="text-yellow-500 hover:text-yellow-400">bd@numeromobile.com</a></p>
+              <p>📞 <a href="tel:+919217523567" className="text-yellow-500 hover:text-yellow-400">+91 9217523567</a></p>
+              <p>📍 NumeroMobile, 4th Floor, Tower A1, SPAZE ITECH PARK, 417, Sector 49, Gurugram, Haryana 122018</p>
             </div>
             
             <div className="mt-8 pt-8 border-t border-white/20">
