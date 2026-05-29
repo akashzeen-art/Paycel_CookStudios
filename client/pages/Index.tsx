@@ -17,6 +17,29 @@ export default function Index() {
     checkAndPlayVideo({ url, title });
   };
 
+  const newVideos = [
+    { title: "Diese alte mediterrane Suppe", url: "https://vz-a2c5d962-9e6.b-cdn.net/8f33cced-89b6-424a-a3a6-03ae93d13134/play_360p.mp4" },
+    { title: "Cheesy Garlic Rolls", url: "https://vz-a2c5d962-9e6.b-cdn.net/935fac92-4d6f-42b2-9eff-e055f0f6e7e9/play_360p.mp4" },
+    { title: "Diese alte Suppe aus Polen", url: "https://vz-a2c5d962-9e6.b-cdn.net/e1c7cde3-9a89-47ab-81fe-18edaa0b2bfd/play_360p.mp4" },
+    { title: "Diese einfache Suppe überrascht jeden!", url: "https://vz-a2c5d962-9e6.b-cdn.net/2015929e-76be-4bdd-b7ea-6f1da818d1fc/play_360p.mp4" },
+    { title: "EASY Cheese Danish Recipe", url: "https://vz-a2c5d962-9e6.b-cdn.net/f070533e-5d59-424d-b0e2-76c660deac43/play_360p.mp4" },
+    { title: "Focaccia a la pizza", url: "https://vz-a2c5d962-9e6.b-cdn.net/4a4b98f6-9214-4158-9127-e4e04964a3e7/play_360p.mp4" },
+    { title: "Golden Garlic Butter Potatoes", url: "https://vz-a2c5d962-9e6.b-cdn.net/0cac6663-931c-4704-b83d-4e298ced5818/play_360p.mp4" },
+    { title: "Diese Suppe hat mein Leben gerettet!", url: "https://vz-a2c5d962-9e6.b-cdn.net/a8a1d291-4f50-4788-ba4b-a3fe163315b1/play_360p.mp4" },
+    { title: "Hast du eine Tasse Kichererbsen", url: "https://vz-a2c5d962-9e6.b-cdn.net/7dfd460c-ffb2-427f-bf06-1f6301b1e57f/play_360p.mp4" },
+    { title: "Ich esse diese gesunden Pfannkuchen jeden Tag!", url: "https://vz-a2c5d962-9e6.b-cdn.net/3314795a-5f3e-454e-97df-1b6fb2adea62/play_360p.mp4" },
+    { title: "Mediterranean Chickpea Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/a3064318-3245-4c70-b2c0-5784d34e34f1/play_360p.mp4" },
+    { title: "Master's Daily Method", url: "https://vz-a2c5d962-9e6.b-cdn.net/0455543c-90bd-46ca-b1f2-11dd9756ed69/play_360p.mp4" },
+    { title: "Cheesy Ground Beef Casserole", url: "https://vz-37338a02-bb9.b-cdn.net/6c399cdc-1600-4161-ab94-f974c2dd5702/play_480p.mp4" },
+    { title: "Ground Beef & Cabbage", url: "https://vz-a2c5d962-9e6.b-cdn.net/89df6a73-f83f-46f1-9dcc-f86fcb0175ea/play_360p.mp4" },
+    { title: "Mediterranean Pasta Salad", url: "https://vz-a2c5d962-9e6.b-cdn.net/fe0dc2cd-1177-4b79-85d8-d7103bb193f9/play_360p.mp4" },
+    { title: "The Best Way To Make Sushi At Home", url: "https://vz-a2c5d962-9e6.b-cdn.net/0725a23f-7282-4315-8d94-928090d1843b/play_360p.mp4" },
+    { title: "Saucy Chicken Fajita Pasta", url: "https://vz-a2c5d962-9e6.b-cdn.net/2cf8ae76-d194-4d0e-a74c-6dc61a905c07/play_360p.mp4" },
+    { title: "The Only Salad I Can Eat Every Day", url: "https://vz-a2c5d962-9e6.b-cdn.net/0e69b816-b94a-4c2f-826b-1413ca9c3acd/play_360p.mp4" },
+    { title: "You've Never Eaten Potatoes Like This!", url: "https://vz-a2c5d962-9e6.b-cdn.net/5dfd44ec-8dc0-4aa0-b9f4-48a0e9de3178/play_360p.mp4" },
+    { title: "This Dish Cleans Your Blood Vessels", url: "https://vz-a2c5d962-9e6.b-cdn.net/a2dc236b-ddc1-4c45-aa47-20b6233946aa/play_360p.mp4" },
+  ];
+
   useEffect(() => {
     const hasSeenPreloader = localStorage.getItem("TheCookStudio_preloader_shown");
     if (hasSeenPreloader) {
@@ -190,6 +213,31 @@ export default function Index() {
                 <span>View All Recipes</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
+            </div>
+
+            {/* New Thumbnails Grid */}
+            <div className="mt-16">
+              {/* Desktop: 4 cols x 5 rows | Mobile: 2 cols x 10 rows */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {newVideos.map((video, index) => (
+                  <div
+                    key={index}
+                    onClick={() => openVideo(video.url, video.title)}
+                    className="cursor-pointer group rounded-xl overflow-hidden border border-white/20 bg-white/10 backdrop-blur-md hover:border-white/40 hover:shadow-xl transition-all duration-300"
+                  >
+                    <div className="relative aspect-video overflow-hidden">
+                      <img
+                        src={`/NewLandscape/${index + 1}.png`}
+                        alt={video.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="p-2">
+                      <p className="text-white text-xs font-medium leading-tight line-clamp-2">{video.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </section>
